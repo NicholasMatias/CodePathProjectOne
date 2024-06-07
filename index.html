@@ -1,350 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <title>Music Playlist Explorer</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
-    
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Music Playlist Explorer</title>
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <header>
-        <!-- Your header content here -->
-        <h1>Music Playlist Explorer</h1>
-    </header>
-
-    <main> 
-        <section class="playlist-cards">
-
-
-                <div class="playlist" onclick="openModal('modal1')">
-                        <div class="playlist-image-container"><img src="assets/img/playlist.png" ></div>
-                        <h3>Song Name</h3>
-                        <p>Artist</p>
-                        <div><i class="fa-regular fa-heart"></i>0</div>
-                </div>
-
-                <div id="modal1" class="modal">
-                    <div class="modal-content">
-                        <span class="close-modal" onclick="closeModal('modal1')">&times;</span>
-                        <div class="modal-header">
-                            <img src="assets/img/playlist.png" alt="" class="playlist-modal-image">
-                            <div class="playlist-modal-title">
-                                <h2>Playlist name</h2>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-
-                        <div class="playlist-modal-songs">
-                            <ul>
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-                            
-
-
-
-                        </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-                <div class="playlist" onclick="openModal('modal2')">
-                        <div class="playlist-image-container"><img src="assets/img/playlist.png" ></div>
-                        <h3>Song Name</h3>
-                        <p>Artist</p>
-                        <div><i class="fa-regular fa-heart"></i>0</div>
-                </div>
-
-
-                <div id="modal2" class="modal">
-                    <div class="modal-content">
-                        <span class="close-modal" onclick="closeModal('modal2')">&times;</span>
-                        <div class="modal-header">
-                            <img src="assets/img/playlist.png" alt="" class="playlist-modal-image">
-                            <div class="playlist-modal-title">
-                                <h2>Playlist name</h2>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-
-                        <div class="playlist-modal-songs">
-                            <ul>
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-                            
-
-
-
-                        </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="playlist" onclick="openModal('modal3')">
-                        <div class="playlist-image-container"><img src="assets/img/playlist.png" ></div>
-                        <h3>Song Name</h3>
-                        <p>Artist</p>
-                        <div><i class="fa-regular fa-heart"></i>0</div>
-                </div>
-
-
-                <div id="modal3" class="modal">
-                    <div class="modal-content">
-                        <span class="close-modal" onclick="closeModal('modal3')">&times;</span>
-                        <div class="modal-header">
-                            <img src="assets/img/playlist.png" alt="" class="playlist-modal-image">
-                            <div class="playlist-modal-title">
-                                <h2>Playlist name</h2>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-
-                        <div class="playlist-modal-songs">
-                            <ul>
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-                            
-
-
-
-                        </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-                <div class="playlist" onclick="openModal('modal4')">
-                        <div class="playlist-image-container"><img src="assets/img/playlist.png" ></div>
-                        <h3>Song Name</h3>
-                        <p>Artist</p>
-                        <div><i class="fa-regular fa-heart"></i>0</div>
-                </div>
-
-
-                <div id="modal4" class="modal">
-                    <div class="modal-content">
-                        <span class="close-modal" onclick="closeModal('modal4')">&times;</span>
-                        <div class="modal-header">
-                            <img src="assets/img/playlist.png" alt="" class="playlist-modal-image">
-                            <div class="playlist-modal-title">
-                                <h2>Playlist name</h2>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-
-                        <div class="playlist-modal-songs">
-                            <ul>
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-                            
-
-
-
-                        </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-
-                <div class="playlist" onclick="openModal('modal5')">
-                        <div class="playlist-image-container"><img src="assets/img/playlist.png" ></div>
-                        <h3>Song Name</h3>
-                        <p>Artist</p>
-                        <div><i class="fa-regular fa-heart"></i>0</div>
-                </div>
-
-
-                <div id="modal5" class="modal">
-                    <div class="modal-content">
-                        <span class="close-modal" onclick="closeModal('modal5')">&times;</span>
-                        <div class="modal-header">
-                            <img src="assets/img/playlist.png" alt="" class="playlist-modal-image">
-                            <div class="playlist-modal-title">
-                                <h2>Playlist name</h2>
-                                <p>Artist</p>
-                            </div>
-                        </div>
-
-                        <div class="playlist-modal-songs">
-                            <ul>
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-
-
-                            <li>
-                                <img src="assets/img/song.png" alt="" class="playlist-modal-song-image">
-                                <div class="playlist-modal-song-details">
-                                    <h3>Song Name</h3> 
-                                    <p>Artist</p> 
-                                    <p class="modal-album">Album</p>
-                                </div>
-                                    <span>Time</span>
-                            </li>
-                            
-
-
-
-                        </ul>
-                        </div>
-                    </div>
-
-                </div>
-
-
-        </section>
-        
-
-    </main>
-
-
-    <footer>
-    </footer>
-    <script src="https://kit.fontawesome.com/3775ce8ebb.js" crossorigin="anonymous"></script>
-    <script src="data/data.js"></script>
-    <script src="script.js"></script>
+  <header>
+    <!-- Your header content here -->
+    <div class="header-content">
+      <h1>Music Playlist Explorer</h1>
+    </div>
+    <a href="featured.html" id="featured-page">
+      <div class="featured-page-button">
+        <h3>
+          Featured Page
+        </h3>
+      </div>
+  </a>
+  </header>
+
+  <main>
+    
+    <section id="playlist-cards">
+
+    </section>
+
+  </main>
+
+
+  <footer>
+    <h5>CBN2024</h5>
+  </footer>
+  <script src="https://kit.fontawesome.com/3775ce8ebb.js" crossorigin="anonymous"></script>
+  <script src="data/data.js"></script>
+  <script src="script.js"></script>
 </body>
+
 </html>
