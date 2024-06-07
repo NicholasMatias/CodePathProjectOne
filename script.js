@@ -62,6 +62,7 @@ function populateSongs(modalId){
 
 function populatePlaylists(playlists){
     var containerDiv = document.getElementById("playlist-cards");
+    // containerDiv.innerHTML="";
     for(let index = 0; index < playlists.length; index++){
     containerDiv.innerHTML+=
     `<div class="playlist" onclick="openModal('${playlists[index].playlistID}')">
