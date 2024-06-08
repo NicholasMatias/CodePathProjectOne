@@ -17,6 +17,28 @@
     <div class="header-content">
       <h1>Music Playlist Explorer</h1>
     </div>
+    <nav>
+      <ul>
+
+
+        <li>
+          <a href="featured.html" id="featured-page">
+              <div class="featured-page-button">
+                <h3>
+                  Featured Page
+                </h3>
+              </div>
+          </a>
+        </li>
+
+
+        <li>
+          <a href="#" onclick="openAddPlaylistModal()">Add Playlist</a>
+        </li>
+
+
+      </ul>
+    </nav>
     <a href="featured.html" id="featured-page">
       <div class="featured-page-button">
         <h3>
@@ -24,6 +46,40 @@
         </h3>
       </div>
   </a>
+
+
+
+  <div id="addPlaylistModal" class="addPlaylistModalClass">
+    <div class="addPlaylist-modal-content">
+      <span class="close-addPlaylist-modal" onclick="closeAddPlaylistModal('addPlaylistModal')">
+        &times;
+      </span>
+      <div class="addPlaylist-modal-header">
+        <h2>
+          Add New Playlist
+        </h2>
+      </div>
+      <div class="addPlaylist-modal-body">
+        <form id="addPlaylistForm">
+          <label for="playlistName">Playlist Name:</label>
+          <input type="text" id="playlistName" name="playlistName" required>
+
+          <label for="playlistCreator">Creator:</label>
+          <input type="text" id="playlistCreator" name="playlistCreator" required>
+
+          <label for="playlistArt">Cover Art URL:</label>
+          <input type="url" id="playlistArt" name="playlistArt" required>
+
+          <label for="songs">Songs (Comma Separated Title, Artist, Album, Duration, Cover Art URL):</label>
+          <textarea name="songs" id="songs" required></textarea>
+
+          <button type="submit">Add Playlist</button>
+        </form>
+      </div>
+    </div>
+  </div>
+
+ 
   </header>
 
   <main>

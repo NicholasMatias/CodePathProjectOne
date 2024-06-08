@@ -62,7 +62,7 @@ function populateSongs(modalId){
 
 function populatePlaylists(playlists){
     var containerDiv = document.getElementById("playlist-cards");
-    // containerDiv.innerHTML="";
+    containerDiv.innerHTML=``;
     for(let index = 0; index < playlists.length; index++){
     containerDiv.innerHTML+=
     `<div class="playlist" onclick="openModal('${playlists[index].playlistID}')">
@@ -173,7 +173,46 @@ function shuffleSongs(playlistID,songID){
 }
 
 
+function openAddPlaylistModal(){
+    console.log("Opening the addPlaylistModal now...");
+    document.getElementById('addPlaylistModal').style.display= 'block';
+}
+function closeAddPlaylistModal(addPlaylistModalId){
+    document.getElementById(addPlaylistModalId).style.display = 'none';
+}
 
 
+document.getElementById('addPlaylistForm').addEventListener('submit', function(event){
+    event.preventDefault();
+
+    const playlistName = document.getElementById('playlistName').value;
+    const playlistCreator = document.getElementById('playlistCreator').value;
+    const playlistArt = document.getElementById('playlistArt').value;
+    const songsData = document.getElementById('songs').value;
+
+
+    const songsArray = songsData.split('\n').map(song =>{
+        const [title, artist, album, duration, coverArt] = song.split(',');
+        return{
+            title: title.trim(),
+            artist: artist.trim(),
+            album: album.trim(), 
+            duration: duration.trim(),
+            cover_art: coverArt.trim()
+        };
+    });
+    const newPlaylist = {
+        playlistID: data.playlists.length,
+        playlist_name: playlistName,
+        playlist_creator: playlistCreator,
+        playlist_art: playlistArt,
+        likeCount: 0,
+        songs: songsArray
+    };
+    data.playlists.push(newPlaylist);
+    populatePlaylists(data.playlists);
+    closeAddPlaylistModal('addPlaylistModal');
+
+});
 
 
